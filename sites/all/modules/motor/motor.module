@@ -1,0 +1,41 @@
+<?php
+
+function motor_menu() {
+
+  $items['node-export'] = array(
+    'title' => 'import data',
+    'page callback' => 'motor_node_export',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+
+  return $items;
+}
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function motor_node_export() {
+  
+  $type = 'referencia'; 
+  $nodes = node_load_multiple(array(), array('type' => $type)); 
+  
+  foreach($nodes as $node) {
+    $node_wrapper = entity_metadata_wrapper('node', $node);
+    $images = explode(', ', $node_wrapper->field_photos_source->value());
+    
+    $c = 0;
+    foreach ($images as $image) {
+      $source = str_replace('public://', 'http://127.0.0.1/davidbau.vr/www/sites/default/files/', $image);
+      $file = system_retrieve_file($source, $image, TRUE);
+      
+
+      $node->field_photos[LANGUAGE_NONE][$c]['fid'] = $file->fid;
+      $c++;
+    }
+    node_save($node);
+  }
+
+  return 'hey!';
+}

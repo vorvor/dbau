@@ -1,0 +1,580 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+body::before {
+  background: url('../images/bg3.jpg');
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-size:70%;
+  background-position: 100% 0%;
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.panels-flexible-row.panels-flexible-row-2-1,
+.panels-flexible-row.panels-flexible-row-2-2 {
+  display: none;
+}
+
+.panels-flexible-row-2-main-row {
+  padding: 0;
+}
+
+
+.panels-flexible-1 .header {
+	padding: 0;
+	position: fixed;
+    z-index: 700;
+    left: 0;
+    right: 0;
+}
+
+.logged-in .panels-flexible-1 .header {
+  display: none;
+}
+
+.panels-flexible-row-1-main-row .panel-pane {
+	background: rgba(255,255,255, 0.7);
+}
+
+.panels-flexible-region-1-center,
+.panels-flexible-region-2-center {
+	width: 100%;
+}
+
+.panels-flexible-region-1-header {
+	background: #222;
+	width: 100%;
+	border-bottom: 1px solid #aaa;
+}
+
+.panels-flexible-region-1-header-inside {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 1em 0 3.5em 0;
+}
+
+.pane-page-logo {
+  float: left;
+}
+
+.pane-system-main-menu {
+  float: right;
+  margin-top: 10px;
+}
+
+#logo {
+  margin: 10px;
+}
+
+#logo img {
+	width: 250px;
+}
+
+.pane-system-main-menu ul.menu {
+	padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.pane-system-main-menu ul.menu li {
+	float: left;
+	position: relative;
+    display: block;
+    line-height: 24px;
+    margin: 0 0 0 40px;
+}
+
+.pane-system-main-menu ul.menu li a {
+  color: #fa7806;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.pane-title, h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0.3em 0;
+  padding: 0;
+}
+
+.panels-flexible-row-1-main-row .panel-pane.pane-node {
+  
+  background: url(../images/biomassza-02.jpg);
+  background-size: 100%;
+  background-position: 0;
+  
+}
+
+.panels-flexible-row-1-main-row .panel-pane.pane-node .pane-title {
+  color: #e86237;
+}
+
+
+
+.pane-node .plus-wrapper {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  padding: 30px 56px;
+  font-weight: 400;
+  line-height: 24px;font-size: 15px;
+  letter-spacing: 1px;
+  background: rgba(0,0,0, 0.7);
+  
+}
+
+.field-slideshow-1 {
+  margin: 0 0 0 40px;
+}
+
+#field-slideshow-1-controls {
+	position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 97%;
+}
+
+.views-field-field-slideshow-images ul {
+  list-style: none;
+}
+
+
+#field-slideshow-1-controls .prev,
+#field-slideshow-1-controls .next {
+	display: block;
+	width: 50px;
+	height: 400px;
+	background: url(../images/icon-next-prev.png) no-repeat;
+	position: absolute;
+	background-size: 200%;
+	text-indent: -9999px;
+}
+
+#field-slideshow-1-controls .prev {
+	left: 0;
+	background-position: 0 50%;
+}
+
+
+
+#field-slideshow-1-controls .next {
+	right: 0;
+
+}
+
+#views_slideshow_cycle_teaser_section_slideshow-default_1 {
+	overflow: hidden;
+}
+
+.view-slideshow {
+  padding-top: 76px;
+}
+
+.view-slideshow .views-field-field-image,
+.view-slideshow .views-field-title,
+.view-slideshow .views-field-field-text {
+	float: left;
+
+}
+
+.view-slideshow .views-field-field-image {
+	margin: 20px;
+	
+
+}
+
+.view-slideshow .views-field-field-image img {
+  max-width: 600px;
+  padding:18px;
+   border:1px solid #333;
+   background-color:#fff;
+}
+
+.view-slideshow .views-field-title {
+	margin-top: 60px;
+}
+
+.view-slideshow .views-field-title {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  color: #e86237;
+}
+
+
+
+.view-slideshow .views-field-field-text  {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	width: 40%;
+}
+
+
+.views-slideshow-controls-text .views-slideshow-controls-text-pause,
+.views-slideshow-controls-text .views-slideshow-controls-text-previous {
+  display: none;
+}
+
+.views-slideshow-controls-bottom {
+
+  height: 38px;
+  margin-top: -24px;
+  height: 38px;
+  position: relative;
+  z-index: 100;
+}
+
+.views-slideshow-controls-text {
+  position: absolute;
+  width: 80px;
+  height: 400px;
+  top: 78%;
+  z-index: 100;
+  right: 20px;
+  text-indent: -9999px;
+}
+
+.views-slideshow-controls-text .views-slideshow-controls-text-next {
+	display: block;
+	 width: 50px;
+  height: 400px;
+  background: url(../images/icon-next-prev.png) no-repeat 100% 0;
+  background-size: 300%;
+      margin-top: -200px;
+  
+}
+
+.views-slideshow-controls-text .views-slideshow-controls-text-next a {
+	text-indent: -9999px;
+}
+
+.view-slideshow .views-slideshow-pager-field-item .views-field-title {
+	margin: 0;
+}
+
+.view-slideshow .views-slideshow-pager-field-item .views-field-title a {
+	font-size: 0.5em;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #e86237;
+}	
+
+.view-slideshow .views-slideshow-pager-field-item.active .views-field-title a {
+	color: #000;
+}
+
+.view-slideshow #views_slideshow_cycle_div_slideshow-default_1_2 .views-field-title {
+	margin-top: 28px;
+}
+
+
+
+
+.view-referencies .views-row {
+	height: 270px;
+	clear: both;
+  padding-top: 22px;
+  overflow: hidden;
+}
+
+.view-referencies .views-row-even {
+  background: rgba(0,0,0,0.15);
+}
+
+.view-referencies .views-row .views-field {
+  float:left;
+  margin-left: 30px;
+  width: 50%;
+}
+
+.view-referencies .views-row .views-field-field-photos {
+	margin-left: 100px;
+	margin-top: 20px;
+	width: 300px;
+	height: 240px;
+}
+
+.view-referencies .views-row .views-field-field-photos ul {
+	list-style-type: none;
+	position: relative;
+	height: 300px;
+}
+
+
+.view-referencies .views-row .views-field-field-photos ul li {
+	
+	
+	position: absolute;
+}
+
+
+.view-referencies .views-row .views-field-field-photos ul li:nth-child(1) {
+	transform: rotate(-15deg);
+	margin: -7px 0 0 0px;
+}
+
+.view-referencies .views-row .views-field-field-photos ul li:nth-child(2) {
+	transform: rotate(20deg);
+	margin: 0 0 0 2px;
+}
+
+.view-referencies .views-row .views-field-field-photos ul li:nth-child(3) {
+	transform: rotate(2deg);
+	margin: -6px 0 0 4px;
+}
+
+.view-referencies .views-row .views-field-field-photos ul li img {
+  padding:5px;
+   border:1px solid #333;
+   background-color:#fff;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+
+
+
+.view-referencies .views-row .views-field-title a {
+   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 2em;
+  color: #e86237;
+  line-height: 1.2em;
+
+}
+
+.view-referencies .views-row .views-field-field-work-name,
+.view-referencies .views-row .views-field-field-customer {
+   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1em;
+    margin-top: 15px;
+
+}
+
+.view-referencies .views-row .views-field-field-customer {
+
+}
+
+.view-referencies ul.pager,
+.panels-flexible-1 .panels-flexible-row {
+	padding: 0;
+	margin: 0;
+}
+
+.view-referencies ul.pager {
+	height: 34px;
+	background: rgba(0,0,0,0.15);
+}
+
+.view-referencies ul.pager li {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4em;
+	  font-weight: 700;
+}
+
+.view-referencies ul.pager li.pager-current {
+	color: #e86237;
+	}
+
+.view-referencies ul.pager li a {
+  text-decoration: none;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+
+
+.pane-custom.pane-3,
+.pane-custom.pane-5 {
+	width: 46%;
+    padding: 10px;
+    height: 326px;
+    float: left;
+}
+
+.pane-custom.pane-2,
+.pane-custom.pane-4 {
+	width: 54%;
+	padding-bottom: 20px;
+	float: left;
+}
+
+
+.pane-custom.pane-1 p:nth-child(1) {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 2em;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.panels-flexible-row-1-main-row .panel-pane.pane-contact {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.pane-contact {
+	padding-bottom: 20px;
+}
+
+.pane-contact .resizable-textarea, .resizable-textarea textarea {
+  width: auto;
+}
+
+.pane-contact .form-item {
+  margin: 0 0 20px 0;
+}
+
+.pane-contact label {
+	font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+
+
+.pane-custom.pane-1 p,
+.pane-custom.pane-2 p,
+.pane-custom.pane-3 p,
+.pane-custom.pane-4 p,
+.pane-custom.pane-5 p  {
+	margin: 2px 0;
+}
+
+.pane-custom.pane-1 strong,
+.pane-custom.pane-2 strong,
+.pane-custom.pane-3 strong,
+.pane-custom.pane-4 strong,
+.pane-custom.pane-5 strong {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.panels-flexible-row-1-main-row .panel-pane.pane-1 {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.grippie {
+	display: none;
+}
+
+.page-node .node {
+  background: rgba(255,255,255,0.6);
+}
+
+
+.node-referencia #ref-photos,
+.node-referencia #ref-data {
+  width: 50%;
+  float: left;
+}
+
+.node-referencia #ref-photos .field-item {
+  float: left;
+  margin: 5px 8px;
+}
+
+.node-referencia h2 {
+	font-size: 2.5em;
+	color: #e86237;
+	line-height: 1.2em;
+}
+
+.node-referencia .field-name-field-end-date,
+.node-referencia .field-name-field-customer,
+.node-referencia .back-link {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.node-referencia .field-name-field-customer {
+  margin-top: 1em;
+}
+
+.node-referencia .back-link {
+  color: #e86237;
+  font-size: 2.5em;
+  margin-top: 1em;
+  display: block;
+}
+
+.node-referencia .back-link .icon-back {
+	background: url(../images/icon-next-prev.png) no-repeat 100% 0;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-size: 150%;
+    background-position: -3%;
+    float:left;
+}
+
+.node-referencia .back-link .text-back {
+	display: block;
+	float: left;
+	padding-top: 22px;
+}
+
+
+
+
+
+
+
