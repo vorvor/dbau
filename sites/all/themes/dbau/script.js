@@ -12,40 +12,40 @@ Drupal.behaviors.myBehavior = {
 
     })
 
-    $('li.menu__item:nth-child(5)').click(function(e) {
+    $('li.menu__item:nth-child(1)').click(function(e) {
       $('html, body').animate({
-        scrollTop: $("a[name='services']").offset().top
+        scrollTop: $("#slider").offset().top
       }, 1000);
       e.preventDefault();
     })
 
-    $('li.menu__item:nth-child(1)').click(function(e) {
+    $('li.menu__item:nth-child(2)').click(function(e) {
       $('html, body').animate({
-        scrollTop: $("a[name='intro']").offset().top
+        scrollTop: $("#about-us").offset().top - 60
       }, 1000);
       e.preventDefault();
     })
 
     $('li.menu__item:nth-child(3)').click(function(e) {
       $('html, body').animate({
-        scrollTop: $(".pane-custom.pane-1").offset().top - 60
+        scrollTop: $("#referencies").offset().top - 60
       }, 1000);
       e.preventDefault();
     })
 
     $('li.menu__item:nth-child(4)').click(function(e) {
       $('html, body').animate({
-        scrollTop: $(".pane-referencies-panel-pane-1").offset().top - 60
+        scrollTop: $("#referencies").offset().top - 170
       }, 1000);
       e.preventDefault();
     })
 
-    
-
-
-    $('.pane-slideshow').prepend('<a name="services"></a>');
-    $('.pane-node').prepend('<a name="intro"></a>');
-    $('.pane-referencies-panel-pane-1').prepend('<a name="references"></a>');
+    $('li.menu__item:nth-child(5)').click(function(e) {
+      $('html, body').animate({
+        scrollTop: $("#contact").offset().top - 170
+      }, 1000);
+      e.preventDefault();
+    })
     
 
   }

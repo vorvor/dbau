@@ -71,7 +71,7 @@ body::before {
   float: left;
 }
 
-.pane-system-main-menu {
+.header .pane-system-main-menu {
   float: right;
   margin-top: 10px;
 }
@@ -84,13 +84,13 @@ body::before {
 	width: 250px;
 }
 
-.pane-system-main-menu ul.menu {
+.header .pane-system-main-menu ul.menu {
 	padding: 0;
     list-style: none;
     margin: 0;
 }
 
-.pane-system-main-menu ul.menu li {
+.header .pane-system-main-menu ul.menu li {
 	float: left;
 	position: relative;
     display: block;
@@ -98,7 +98,7 @@ body::before {
     margin: 0 0 0 40px;
 }
 
-.pane-system-main-menu ul.menu li a {
+.header .pane-system-main-menu ul.menu li a {
   color: #fa7806;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -115,6 +115,10 @@ body::before {
   font-size: 30px;
   margin: 0.3em 0;
   padding: 0;
+}
+
+.footer h2 {
+  font-size: 15px;
 }
 
 .panels-flexible-row-1-main-row .panel-pane.pane-node {
@@ -574,6 +578,67 @@ body::before {
 
 
 
+
+
+
+.panels-flexible-row-1-main-row .footer {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.panels-flexible-row-1-main-row .footer a {
+  color: #fff;
+  text-decoration: none; 
+}
+
+.panels-flexible-row-1-main-row .footer .panel-pane {
+  background: none;
+}
+
+.footer .pane-system-main-menu {
+  padding-left: 20px;
+  width: 15%;
+  float: left;
+}
+
+.footer .pane-system-main-menu ul{
+  padding: 0;
+  margin: 0;
+}
+
+.footer .pane-system-main-menu ul li {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.footer .pane-system-main-menu ul a,
+.footer .pane-footer-referencies-panel-pane-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .pane-footer-referencies-panel-pane-1 {
+  padding-left: 25px;
+  width: 25%;
+  float: left;
+}
+
+.footer .footer-contact {
+  padding-left: 40px;
+  width: 25%;
+  float: left;
+}
+
+.footer .footer-contact p {
+  margin: 0;
+}
+
+.footer #footer-more {
+  padding-left: 40px;
+  width: 35%;
+  float: left;
+  text-align: right;
+}
 
 
 
