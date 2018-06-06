@@ -39,3 +39,13 @@ function motor_node_export() {
 
   return 'hey!';
 }
+
+
+function motor_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id == 'views_exposed_form') {
+    dpm($form);
+    $form['submit']['#value'] = 'Szűrés';
+    $form['field_reference_type_tid']['#options']['All'] = 'Összes kategória';
+  }
+}
