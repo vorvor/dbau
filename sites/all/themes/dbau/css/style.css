@@ -583,7 +583,8 @@ body::before {
 
 
 
-.panels-flexible-row-1-main-row .footer {
+.panels-flexible-row-1-main-row .footer,
+.panels-flexible-row-1-2 .footer {
   background: rgba(0,0,0,0.8);
   color: #fff;
 }
