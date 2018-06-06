@@ -12,6 +12,8 @@ Drupal.behaviors.myBehavior = {
 
     })
 
+
+
     $('li.menu__item:nth-child(1)').click(function(e) {
       $('html, body').animate({
         scrollTop: $("#slider").offset().top

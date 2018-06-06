@@ -418,7 +418,9 @@ body::before {
 
 }
 
-
+.node-referencia {
+  padding-top: 80px;
+}
 
 
 
@@ -639,6 +641,12 @@ body::before {
   float: left;
   text-align: right;
 }
+
+
+
+
+
+
 
 
 
