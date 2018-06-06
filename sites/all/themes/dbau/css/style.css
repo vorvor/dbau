@@ -589,12 +589,14 @@ body::before {
   color: #fff;
 }
 
-.panels-flexible-row-1-main-row .footer a {
+.panels-flexible-row-1-main-row .footer a,
+.panels-flexible-row-1-2 .footer a {
   color: #fff;
   text-decoration: none; 
 }
 
-.panels-flexible-row-1-main-row .footer .panel-pane {
+.panels-flexible-row-1-main-row .footer .panel-pane,
+.panels-flexible-row-1-2 .footer .panel-pane {
   background: none;
 }
 
