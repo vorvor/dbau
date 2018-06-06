@@ -24,6 +24,11 @@ body::before {
   filter: blur(2px);
 }
 
+.panels-flexible-row.panels-flexible-row-2-3.clearfix,
+.panels-flexible-row.panels-flexible-row-1-2.panels-flexible-row-last.clearfix {
+  width: 101%;
+}
+
 .panels-flexible-row.panels-flexible-row-2-1,
 .panels-flexible-row.panels-flexible-row-2-2 {
   display: none;
@@ -639,10 +644,10 @@ body::before {
 }
 
 .footer #footer-more {
-  padding-left: 40px;
   width: 35%;
   float: left;
   text-align: right;
+  padding: 0 20px;
 }
 
 
